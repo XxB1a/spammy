@@ -1,0 +1,10 @@
+colorama
+discord_webhook
+requests_toolbelt
+datetime
+math
+copy
+hashlib
+uuid
+hmac
+datetime
