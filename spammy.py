@@ -230,6 +230,8 @@ def webhookspammer():
         amount = int(input(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Amount:{Fore.GREEN} '))
 
         webhook = DiscordWebhook(url=webhook_url, content=message)
+        
+    print(Fore.RESET)
 
     for i in range(amount):
         response = webhook.execute()
