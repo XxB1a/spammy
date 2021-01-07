@@ -112,7 +112,7 @@ def smsbomb():
 def igbomb():
     clear()
     print(f' {Fore.RED}[{Fore.GREEN}-{Fore.RED}] InstagramAPI.py by {Fore.GREEN}https://www.github.com/Gumbraise{Fore.RED}. Thank you a lot!')
-    print(f' {Fore.RED}[{Fore.GREEN}-{Fore.RED}] This method works by logging into your account and spamming a message, therefore this does not work if you have 2FA enabled! Combolist compatibility will be added soon.')
+    print(f' {Fore.RED}[{Fore.GREEN}-{Fore.RED}] This might fail because of a {Fore.CYAN}429 - Too Many Requests{Fore.RED}. This method works by logging into your account and spamming a message, therefore this does not work if you have 2FA enabled! Combolist compatibility will be added soon.')
     print(Fore.RESET)
 
     victim = str(input(f" {Fore.RED}[{Fore.GREEN}-{Fore.RED}]{Fore.MAGENTA} Victim's @:{Fore.GREEN} "))
