@@ -5,7 +5,19 @@ SPAMMY: A Python spamming tool, including SMS bomb, Instagram spammer, and more!
 <br>
 
 # Requirements
-All requirements can be installed using the following command: `pip3 install -r requirements.txt`
+All requirements can be installed using the following command: `pip3 install -r requirements.txt`.
+If that command returns an error for you, type the following:
+```
+pip3 install colorama
+pip3 install discord_webhook
+pip3 install requests_toolbelt
+pip3 install datetime
+pip3 install math
+pip3 install copy
+pip3 install hashlib
+pip3 install uuid
+pip3 install hmac
+pip3 install datetime ```
 <br>
 
 # Options:
