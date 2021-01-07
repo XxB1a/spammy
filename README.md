@@ -17,7 +17,8 @@ pip3 install copy
 pip3 install hashlib
 pip3 install uuid
 pip3 install hmac
-pip3 install datetime ```
+pip3 install datetime
+```
 <br>
 
 # Options:
