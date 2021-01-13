@@ -18,14 +18,14 @@ def clear():
 options = ['1', '2', '3', '4']
 banner = f"""
 {Fore.MAGENTA}
-             https://www.github.com/XxBiancaXx/spammy       
+             https://www.github.com/XxB1a/spammy       
       ███████╗██████╗  █████╗ ███╗   ███╗███╗   ███╗██╗   ██╗
       ██╔════╝██╔══██╗██╔══██╗████╗ ████║████╗ ████║╚██╗ ██╔╝
       ███████╗██████╔╝███████║██╔████╔██║██╔████╔██║ ╚████╔╝ 
       ╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝  
       ███████║██║     ██║  ██║██║ ╚═╝ ██║██║ ╚═╝ ██║   ██║
       ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝   ╚═╝ {Fore.RED} Made by:{Fore.GREEN} XxBiancaXx{Fore.MAGENTA}
-      {Fore.RED} Discord:{Fore.GREEN} removed {Fore.MAGENTA}|{Fore.RED} IG:{Fore.GREEN} removed {Fore.MAGENTA}|{Fore.RED} GitHub: {Fore.GREEN}@XxBiancaXx
+      {Fore.RED} Discord:{Fore.GREEN} removed {Fore.MAGENTA}|{Fore.RED} IG:{Fore.GREEN} removed {Fore.MAGENTA}|{Fore.RED} GitHub: {Fore.GREEN}@XxB1a
 
  {Fore.RED}[{Fore.MAGENTA}1{Fore.RED}]{Fore.GREEN} SMS Bomb (poor)
  {Fore.RED}[{Fore.MAGENTA}2{Fore.RED}]{Fore.GREEN} Instagram Spammer
