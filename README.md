@@ -1,7 +1,7 @@
 # spammy
 SPAMMY: A Python spamming tool, including SMS bomb, Instagram spammer, and more! - I'm not responsible for any damage caused by this!
 <br>
-![spammy](https://scontent-amt2-1.cdninstagram.com/v/t51.2885-15/e15/s640x640/135711970_1353439581693323_500692935220049881_n.jpg?_nc_ht=scontent-amt2-1.cdninstagram.com&_nc_ohc=ONSt2Ru_73YAX9NTl3G&oh=b1ec49af53fbea60b95104544edb7e74&oe=601F3873)
+![spammy](https://media.discordapp.net/attachments/802869820717531136/802869836677644359/unknown.png)
 <br>
 
 # Requirements
