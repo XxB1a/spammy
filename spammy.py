@@ -25,7 +25,7 @@ banner = f"""
       ╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝  
       ███████║██║     ██║  ██║██║ ╚═╝ ██║██║ ╚═╝ ██║   ██║
       ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝   ╚═╝ {Fore.RED} Made by:{Fore.GREEN} XxBiancaXx{Fore.MAGENTA}
-      {Fore.RED} Discord:{Fore.GREEN} removed {Fore.MAGENTA}|{Fore.RED} IG:{Fore.GREEN} removed {Fore.MAGENTA}|{Fore.RED} GitHub: {Fore.GREEN}@XxB1a
+      {Fore.RED} Discord:{Fore.GREEN} XxBiancaXx#4356 {Fore.MAGENTA}|{Fore.RED} IG:{Fore.GREEN} @moron420 {Fore.MAGENTA}|{Fore.RED} GitHub: {Fore.GREEN}@XxB1a
 
  {Fore.RED}[{Fore.MAGENTA}1{Fore.RED}]{Fore.GREEN} SMS Bomb (poor)
  {Fore.RED}[{Fore.MAGENTA}2{Fore.RED}]{Fore.GREEN} Instagram Spammer
