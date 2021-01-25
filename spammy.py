@@ -236,7 +236,7 @@ def mailbomb():
         set_server = "yahoo"
 
     else:
-        print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} You dodn't pick G or Y. Going with GMail!")
+        print(f" {Fore.RED}[{Fore.GREEN}+{Fore.RED}]{Fore.MAGENTA} You didn't pick G or Y. Going with GMail!")
 
         smtp_server = 'smtp.gmail.com'
         port = 587
