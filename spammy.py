@@ -18,14 +18,14 @@ def clear():
 options = ['1', '2', '3', '4']
 banner = f"""
 {Fore.MAGENTA}
-             https://www.github.com/XxB1a/spammy       
-      ███████╗██████╗  █████╗ ███╗   ███╗███╗   ███╗██╗   ██╗
-      ██╔════╝██╔══██╗██╔══██╗████╗ ████║████╗ ████║╚██╗ ██╔╝
-      ███████╗██████╔╝███████║██╔████╔██║██╔████╔██║ ╚████╔╝ 
-      ╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝  
-      ███████║██║     ██║  ██║██║ ╚═╝ ██║██║ ╚═╝ ██║   ██║
-      ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝   ╚═╝ {Fore.RED} Made by:{Fore.GREEN} XxBiancaXx{Fore.MAGENTA}
-      {Fore.RED} Discord:{Fore.GREEN} XxBiancaXx#4356 {Fore.MAGENTA}|{Fore.RED} IG:{Fore.GREEN} @moron420 {Fore.MAGENTA}|{Fore.RED} GitHub: {Fore.GREEN}@XxB1a
+             https://discord.gg/f3Q3bMvHxQ      
+██████╗░░█████╗░██╗░░░░░░█████╗░██╗░░░░░██╗░██████╗░██╗░░██╗████████╗
+██╔══██╗██╔══██╗██║░░░░░██╔══██╗██║░░░░░██║██╔════╝░██║░░██║╚══██╔══╝
+██████╔╝███████║██║░░░░░███████║██║░░░░░██║██║░░██╗░███████║░░░██║░░░
+██╔═══╝░██╔══██║██║░░░░░██╔══██║██║░░░░░██║██║░░╚██╗██╔══██║░░░██║░░░
+██║░░░░░██║░░██║███████╗██║░░██║███████╗██║╚██████╔╝██║░░██║░░░██║░░░
+╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░ {Fore.RED}  by:{Fore.GREEN} Lucifer.pl{Fore.MAGENTA}
+      {Fore.RED} ArteriaX:{Fore.GREEN} lucifer {Fore.MAGENTA}|{Fore.RED} Discord:{Fore.GREEN} @1999&palalight {Fore.MAGENTA}|{Fore.RED} my {Fore.GREEN}gang
 
  {Fore.RED}[{Fore.MAGENTA}1{Fore.RED}]{Fore.GREEN} SMS Bomb (poor)
  {Fore.RED}[{Fore.MAGENTA}2{Fore.RED}]{Fore.GREEN} Instagram Spammer
